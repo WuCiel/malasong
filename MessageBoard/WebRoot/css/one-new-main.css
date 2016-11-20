@@ -1,0 +1,127 @@
+body{
+    font-family:serif;
+}
+#home {
+    width: 1200px!important;
+    height: 1040px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    background-color: rgba(255,255,255,.2);
+    box-shadow:0 0 500px rgba(0,0,0,.9);
+}
+/*新闻区**************************************************************************************************************************/
+#div-new{
+    position: relative;
+    background-color: rgba(255,255,255,.9);
+    width: 1200px;
+    height: 1000px;
+    border: 1px solid Rgba(0,0,0,.2);
+    border-right: none;
+    border-left: none;
+}
+.div-text1{
+    width: 1150px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.div-image{
+    width: 1150px;
+    height: 450px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.div-image img{
+    display: block;
+    width: 1150px;
+    height: 450px;
+}
+.div-text2{
+    width: 1150px;
+    margin-left: 25px;
+    margin-top: 20px;
+    text-align:justify;
+    /*border: red 1px solid;*/
+}
+.text1{
+    font-family: inherit;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+}
+.text2{
+    font-family: inherit;
+    font-size: 17px;
+    color: rgb(60,60,60);
+    font-weight: 700;
+}
+.text3{
+    font-family: inherit;
+    font-size: 15px;
+    color: rgba(0,0,0,.6);
+}
+.div-say{
+    width: 1150px;
+    margin-left: 25px;
+    margin-top: 20px;
+    /*border: 1px red solid;*/
+}
+.div-say img{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+/*下方文字区域***********************************************************************************************************************/
+#last-text-div{
+    position: absolute;
+    background-color: white;
+    width: 1200px;
+    height:40px ;
+}
+#scroll-top-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 70px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-top-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-top{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}
+#scroll-buttom-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-buttom-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-buttom{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}

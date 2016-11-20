@@ -1,0 +1,473 @@
+body{
+    background-color: rgb(155,155,155);
+}
+#home-father{
+    width: 1200px!important;
+    height: 1210px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+    background-color: white;
+}
+#home {
+    width: 1200px!important;
+    height: 1210px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+}
+@media only screen and (max-width: 768px){
+    #div-top-container{
+        width: 1200px;
+    }
+}
+/*顶部属性设定*******************************************************************************/
+#top{
+    position: relative;
+    border: hidden;
+    height: 150px;
+    width: 1200px;
+    z-index: 1;
+    background: url("../image/public1.png") 0px 0px repeat, -moz-linear-gradient(top, #f8f8f8,#eeeeee);
+    background: url("../image/public1.png") 0px 0px repeat, -webkit-gradient(linear,left top,left bottom,color-stop(.2, #f8f8f8),color-stop(1, #eeeeee)) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -o-linear-gradient(top, #f8f8f8,#eeeeee) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -ms-linear-gradient(top, #f8f8f8,#eeeeee);
+}
+#header_left{
+    position: relative;
+    float: left;
+    border:hidden;
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 120px;
+    width: 400px;
+}
+#header_right{
+    position: relative;
+    float: right;
+    border:hidden;
+    margin-top: 30px;
+    height: 120px;
+    width: 330px;
+}
+#div_text1 a{
+    font:bold 44px Arial;
+    color: #51545C;
+    letter-spacing: -.03em;
+    text-decoration: none;
+}
+#div_text1 a:hover{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+#div_text2 {
+    margin-top: 8px;
+}
+#div_text2 p{
+    font: normal 13px Arial;
+    color:#adb2b6;
+}
+/*上层按钮层属性设定************************************************************************************/
+*{/*是li到最左边距离为0*/
+    margin: 0px;
+    padding: 0px;
+}
+ul a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;/*去掉所有li的点儿*/
+}
+#menu-top{
+    width: 1200px;
+    height:50px;
+    /*margin-top: 3px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee');
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    border-top:rgba(0,0,0,.15) 1px solid;
+    border-bottom:rgba(0,0,0,.15) 1px solid;
+    border-right: none;
+    border-left: none;
+}
+#ul1 {
+    position: relative;
+    display: block;
+    width:1200px;
+    height: 50px;
+    margin-top: 0;
+    /*margin-left: 10px;*/
+    background: url("../image/public2.png") repeat;
+}
+#ul1 li {
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+#li-home{
+    margin-left: 20px;
+}
+#li-conference{
+    background: url("../image/li_bg.png") 0px -10px  no-repeat;
+    background-color: rgb(252,252,252);
+}
+#ul1 li a {
+    color: rgba(0,0,0,.55);
+    font:normal 13px Arial;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height:50px;
+}
+#li-conference:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    width: 5px;
+    height: 100%;
+}
+#ul1 a:hover span,#ul1 a:focus span{
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#ul1 span {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.35s;
+    -moz-transition: -moz-transform 0.35s;
+    transition: transform 0.35s;
+}
+#li-span{
+    font-weight: bolder;
+    color: black;
+}
+#ul1 span::before {
+    position: absolute;
+    top: 100%;
+    height:100%;
+    width:110%;
+    content: attr(data-hover);
+    font-weight: bold;
+    color: black;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*最上方滚动隐藏的菜单栏属性设定**********************************************************************************************************/
+#top-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color:Rgb(239,239,239);
+    z-index: 100;
+    display: none;
+}
+#top-in{
+    width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#top-container a{/*logo位置*/
+    display: block;
+    float: right;
+    padding: 5px 0px;
+}
+#top-con-left a{/*按钮位置*/
+    display: block;
+    float: left;
+    padding: 15px 10px;
+    color: rgba(0,0,0,.7);
+    font:normal 13px Arial;
+    letter-spacing: -0.01em;
+    text-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+#top-container img{
+    height: 35px;
+    padding-top: 5px;
+}
+#li-home2{
+    background: url("../image/li_bg.png")0px -16px  no-repeat;
+    background-color: rgb(243,243,243);
+}
+#li-home2:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    /*top: -15px;*/
+    width: 5px;
+    height: 100%;
+}
+#ul2 li{
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+/*中间演讲文件区域******************************************************************************************************************************/
+#div-conference{
+    height: 960px;
+    width: 1200px;
+    zoom:1;
+    background:rgb(249,249,249);
+}
+#div-conference:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.rightBox{
+    float: left;
+    width: 35%;
+    height: 230px;
+    margin-left: 10px;
+    margin-top:30px;
+    background:rgb(245,245,245);
+    border: solid 1px rgba(0,0,0,.2);
+    display: inline;
+    text-align: left;
+    border-radius:5px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    -ms-transition: width 2s ease;
+    transition: width 1s ease;
+}
+
+#loading-first{
+    margin-top: 60px;
+}
+#loading-first img{
+    width: 90px;
+    border-radius: 10px;
+}
+#loading-first img:hover{
+    width: 100px;
+    margin-top: -5px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.leftBox{
+    float: left;
+    width: 60%;
+    height: 900px;
+    margin-left: 10px;
+    margin-top:30px;
+    border-radius:5px;
+    background:rgb(245,245,245);
+    border: solid 1px rgba(0,0,0,.2);
+    display: inline;
+    overflow: hidden;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    transition: width 1s ease;
+}
+.leftBox:hover,.rightBox:hover,.bottomBox:hover{
+    background:rgb(249,249,249);
+    border: solid 1px rgba(0,0,0,.3);
+}
+@media only screen and (min-width: 400px) and (max-width: 1024px){
+    .leftBox{ width: 45%;}
+}
+
+.rightBox-in{
+    height: 50px;
+    border-bottom: solid 1px rgba(0,0,0,.2);
+}
+.rightBox-in1{
+    margin-top: 20px;
+    border-top: dotted 1px rgba(0,0,0,.2);
+}
+.rightBox-in3{
+    height: 50px;
+    border:none;
+}
+.rightBox-in3 p,.rightBox-in1 p,.rightBox-in p{
+    text-align: left;
+    line-height: 50px;
+    margin-left: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.5);
+}
+.rightBox-in3 h2,.rightBox-in1 h2,.rightBox-in h2{
+    text-align: left;
+    line-height: 50px;
+    margin-left: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: rgba(0,0,0,.6);
+}
+.bottomBox{
+    float: left;
+    width: 35%;
+    height:650px;
+    margin: 10px;
+    background:rgb(245,245,245);
+    border: solid 1px rgba(0,0,0,.2);
+    display: inline;
+    text-align: center;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.week{
+    width:95%;
+    height: 250px;
+    margin:20px auto;
+    border: solid 1px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.week p,.week a{
+    text-align: left;
+    line-height: 30px;
+    margin-left: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,.6);
+}
+.week a{
+    font-size: 12px;
+    color: rgb(18,143,168);
+}
+.week a:hover{
+    cursor: pointer;
+    color: rgb(18,143,168);
+    text-decoration: underline;
+}
+.whospeak{
+    float: left;
+    display: inline-block;
+    width: 150px;
+    height: 180px;
+    overflow: hidden;
+    margin-left: 20px;
+    text-align: center;
+}
+.wholook{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width:60%;
+    height: 180px;
+    text-align: left;
+    border-top: dotted 1px rgba(0,0,0,.2);
+    border-bottom: dotted 1px rgba(0,0,0,.2);
+}
+
+.find{
+    margin-top: 5px;
+    width: 100%;
+    height: 600px;
+    overflow: auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.find p,.find a{
+    text-align: left;
+    line-height: 30px;
+    margin-left: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(18,143,168);
+}
+.find a:hover{
+    cursor: pointer;
+    color: rgb(18,143,168);
+    text-decoration: underline;
+}
+
+/*最后一行标语****************************************************************************************************************************/
+#last-text-div{
+    background-color: rgb(249,249,249);
+    position: absolute;
+    width: 1200px;
+    height: 50px ;
+    top: 1160px;
+}
+#last-text-div p{
+    color:rgb(124,124,125);
+    text-align:center;
+    font:normal 13px Arial!important;
+    padding-top: 35px;
+}
+#last-text-div p a{
+    text-decoration: none;
+    color: rgb(2,160,232);
+}
+/*滚动界面最顶端最低端div属性**********************************************************************************/
+#scroll-top-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 65px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-top-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-top{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}
+#scroll-bottom-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-bottom-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-bottom{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}

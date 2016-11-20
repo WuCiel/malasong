@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <servlet-name>JudgeRegister</servlet-name>
+    <servlet-class>MessageBoard.Servlet.JudgeRegister</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JudgeLogin</servlet-name>
+    <servlet-class>MessageBoard.Servlet.JudgeLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MessageBoard</servlet-name>
+    <servlet-class>MessageBoard.Servlet.MessageBoard</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet>
+    <servlet-name>handin</servlet-name>
+    <servlet-class>MessageBoard.Servlet.handin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>MessageBoard.Servlet.logout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReplyMessage</servlet-name>
+    <servlet-class>MessageBoard.Servlet.ReplyMessage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>test</servlet-name>
+    <servlet-class>test.testUse</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetProductList</servlet-name>
+    <servlet-class>MessageBoard.Servlet.GetProductList</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Purchase</servlet-name>
+    <servlet-class>MessageBoard.Servlet.Purchase</servlet-class>
+  </servlet>
+
+
+  
+  <!-- 登录的过滤器过滤器 -->
+ <filter>
+ 	<filter-name>loginFilter</filter-name>
+ 	<filter-class>MessageBoard.Filter.LoginFilter</filter-class>
+ </filter>
+ <filter-mapping>
+	<filter-name>loginFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+ </filter-mapping>
+
+  
+ <context-param>
+ 	<param-name>dbHost</param-name>
+ 	<param-value>172.29.25.17</param-value>
+ </context-param> 
+
+ <context-param>
+ 	<param-name>dbUser</param-name>
+ 	<param-value>root</param-value>
+ </context-param> 
+ 
+  <context-param>
+ 	<param-name>dbPwd</param-name>
+ 	<param-value>wenjibin</param-value>
+ </context-param> 
+ 
+ <context-param>
+ 	<param-name>dbT</param-name>
+ 	<param-value>test3</param-value>
+ </context-param> 
+ 
+  <context-param>
+ 	<param-name>dbDriver</param-name>
+ 	<param-value>com.mysql.jdbc.Driver</param-value>
+ </context-param> 
+ 
+
+  <servlet-mapping>
+    <servlet-name>JudgeRegister</servlet-name>
+    <url-pattern>/JudgeRegister</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JudgeLogin</servlet-name>
+    <url-pattern>/JudgeLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MessageBoard</servlet-name>
+    <url-pattern>/MessageBoard</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>handin</servlet-name>
+    <url-pattern>/handin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReplyMessage</servlet-name>
+    <url-pattern>/ReplyMessage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/testUse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetProductList</servlet-name>
+    <url-pattern>/GetProductList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Purchase</servlet-name>
+    <url-pattern>/Purchase</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  	<welcome-file>/MessageBoard</welcome-file>
+  </welcome-file-list>
+
+</web-app>

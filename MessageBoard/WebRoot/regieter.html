@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册用户</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge"><!--对IE设置兼容-->
+    <link rel="SHORTCUT ICON" href="image/show.png"><!--用一个矢量图做为网站图标-->
+    <link href="css/contactus-main.css" rel="stylesheet" type="text/css">
+    <script src="js/jQuery.js" type="text/javascript"></script>
+    <script src="js/contactus-main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="home-father">
+    <div id="home">
+        <!--最上层-->
+        <div id="top">
+            <div id="header_right"><a href="index.html"></a></div>
+            <div id="header_left">
+                <div  id="div_text1"><a href="index.html">注册新用户</a></div>
+                <div id="div_text2"><p>注册用户</p></div>
+            </div>
+        </div>
+
+
+
+    <!--联系我们区域-->
+    <div id="div-contact">
+
+        <div id="div-form">
+            <div id="div-form-mes">
+                <form class="contact_form" method="post" name="loginForm" action="http://172.29.107.233:8080/MessageBoard/JudgeRegister">
+                    <ul>
+                        <li style="font:bold 25px Arial;color:rgb(124,124,125);">报名</li>
+                        <li style="font:normal 18px Arial;color:rgb(124,124,125);">
+                            <label>用户名</label>
+                            <input type="text"  placeholder="用户名" name="cid" " required/><!--required是规定该位置必填-->
+                        </li>
+                        <li style="font:normal 18px Arial;color:rgb(124,124,125);">
+                            <label>昵称</label>
+                            <input placeholder="昵称" name="cname" required/></input>
+                        </li>
+						 <li style="font:normal 18px Arial;color:rgb(124,124,125);">
+                            <label>密码</label>
+                            <input type="password" placeholder="密码" id="cpwd" name="cpwd" required/></input>
+                        </li>
+                         <li style="font:normal 18px Arial;color:rgb(124,124,125);">
+                            <label>城市</label>
+                            <input placeholder="城市" name="city" required/></input>
+                        </li>
+                        <li>
+                            <button type="submit" onclick="text_is_right()">提交</button>
+                            <button type="reset">重置</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+    </div>
+   
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,353 @@
+body{
+    background-color: rgb(155,155,155);
+}
+#home-father{
+    width: 1200px!important;
+    height: 2150px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+    background-color: white;
+}
+#home {
+    width: 1200px!important;
+    height: 2150px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+}
+@media only screen and (max-width: 768px){
+    #div-top-container{
+        width: 1200px;
+    }
+}
+/*顶部属性设定*******************************************************************************/
+#top{
+    position: relative;
+    border: hidden;
+    height: 150px;
+    width: 1200px;
+    z-index: 1;
+    background: url("../image/public1.png") 0px 0px repeat, -moz-linear-gradient(top, #f8f8f8,#eeeeee);
+    background: url("../image/public1.png") 0px 0px repeat, -webkit-gradient(linear,left top,left bottom,color-stop(.2, #f8f8f8),color-stop(1, #eeeeee)) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -o-linear-gradient(top, #f8f8f8,#eeeeee) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -ms-linear-gradient(top, #f8f8f8,#eeeeee);
+}
+#header_left{
+    position: relative;
+    float: left;
+    border:hidden;
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 120px;
+    width: 400px;
+}
+#header_right{
+    position: relative;
+    float: right;
+    border:hidden;
+    margin-top: 30px;
+    height: 120px;
+    width: 330px;
+}
+#div_text1 a{
+    font:bold 44px Arial;
+    color: #51545C;
+    letter-spacing: -.03em;
+    text-decoration: none;
+}
+#div_text1 a:hover{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+#div_text2 {
+    margin-top: 8px;
+}
+#div_text2 p{
+    font: normal 13px Arial;
+    color:#adb2b6;
+}
+/*上层按钮层属性设定************************************************************************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;/*去掉所有li的点儿*/
+}
+#menu-top{
+    width: 1200px;
+    height:50px;
+    /*margin-top: 3px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee');
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    border-top:rgba(0,0,0,.15) 1px solid;
+    border-bottom:rgba(0,0,0,.15) 1px solid;
+    border-right: none;
+    border-left: none;
+}
+#ul1 {
+    position: relative;
+    display: block;
+    width:1200px;
+    height: 50px;
+    margin-top: 0;
+    /*margin-left: 10px;*/
+    background: url("../image/public2.png") repeat;
+}
+#ul1 li {
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+#li-home{
+    margin-left: 20px;
+}
+#li-member{
+    background: url("../image/li_bg.png") 0px -10px  no-repeat;
+    background-color: rgb(252,252,252);
+}
+#ul1 li a {
+    color: rgba(0,0,0,.55);
+    font:normal 13px Arial;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height:50px;
+}
+#li-member:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    width: 5px;
+    height: 100%;
+}
+#ul1 a:hover span,#ul1 a:focus span{
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#ul1 span {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.35s;
+    -moz-transition: -moz-transform 0.35s;
+    transition: transform 0.35s;
+}
+#li-span{
+    font-weight: bolder;
+    color: black;
+}
+#ul1 span::before {
+    position: absolute;
+    top: 100%;
+    height:100%;
+    width:110%;
+    content: attr(data-hover);
+    font-weight: bold;
+    color: black;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*最上方滚动隐藏的菜单栏属性设定**********************************************************************************************************/
+#top-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color:Rgb(239,239,239);
+    z-index: 100;
+    display: none;
+}
+#top-in{
+    width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#top-container a{/*logo位置*/
+    display: block;
+    float: right;
+    padding: 5px 0px;
+}
+#top-con-left a{/*按钮位置*/
+    display: block;
+    float: left;
+    padding: 15px 10px;
+    color: rgba(0,0,0,.7);
+    font:normal 13px Arial;
+    letter-spacing: -0.01em;
+    text-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+#top-container img{
+    height: 35px;
+    padding-top: 5px;
+}
+#li-home2{
+    background: url("../image/li_bg.png")0px -16px  no-repeat;
+    background-color: rgb(243,243,243);
+}
+#li-home2:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    /*top: -15px;*/
+    width: 5px;
+    height: 100%;
+}
+#ul2 li{
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+/*下方内容区属性*********************************************************************************/
+#div-people{
+    background-color: rgb(249,249,249);
+    position: relative;
+    height: 1900px;
+    width: 1200px;
+    top: 0;
+    border: rgba(0,0,0,.1) 1px solid;
+    border-bottom:none;
+    border-left: none;
+    border-right: none;
+}
+.div-people-messege{
+    width: 1150px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    /*border: red 1px solid;*/
+}
+.div-personal{
+    float: left;
+    width: 573px;
+    height: 240px;
+    margin-top: 5px;
+    margin-left: 0;
+    /*border: 1px solid green;*/
+}
+.div-photo{
+    float: left;
+    height: 210px;
+    width: 160px;
+    background-color: rgb(254,254,254);
+    /*border: 2px solid black;*/
+    margin-top: 18px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.05);
+}
+.div-photo img{
+    display: block;
+    width: 142px;
+    height: 194px;
+    margin-left:9px;
+    margin-top: 8px;
+}
+.div-name{
+    float: left;
+    width: 385px;
+    height: 170px;
+    margin-top: 38px;
+    margin-left: 25px;
+    /*border: 1px solid red;*/
+}
+.div-name>:first-child{
+    font:bold 22px Arial;
+}
+.div-name p{
+    color: black;
+    font: normal 14px Arial;
+    letter-spacing: -0.01em;
+}
+.div-name p span{
+   color: rgb(125,164,181);
+    font:normal 15px Arial;
+}
+
+
+/*最后一行标语****************************************************************************************************************************/
+#last-text-div{
+    background-color: rgb(249,249,249);
+    position: absolute;
+    width: 1200px;
+    height: 50px ;
+    top: 2100px;
+}
+#last-text-div p{
+    color:rgb(124,124,125);
+    text-align:center;
+    font:normal 13px Arial!important;
+    padding-top: 35px;
+}
+#last-text-div p a{
+    text-decoration: none;
+    color: rgb(2,160,232);
+}
+/*滚动界面最顶端最低端div属性**********************************************************************************/
+#scroll-top-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 65px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-top-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-top{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}
+#scroll-bottom-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-bottom-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-bottom{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}

@@ -1,0 +1,642 @@
+body{
+    background-color: rgb(155,155,155);
+}
+#home-father{
+    width: 1200px!important;
+    height: 1400px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+    background-color: white;
+}
+#home {
+    width: 1200px!important;
+    height: 1400px;
+    position:relative;
+    margin:0 auto 30px auto !important;
+    top: 3px;
+}
+/*@media only screen and (min-width: 768px){
+    #ul1 a:hover span,#ul1 a:focus span{
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}*/
+@media only screen and (max-width: 768px){
+    #top-container{
+        width: 1200px;
+    }
+}
+/*顶部属性设定*************************************************************************************************************************************************************************/
+#top{
+    position: relative;
+    border: hidden;
+    height: 150px;
+    width: 1200px;
+    z-index: 1;
+    background: url("../image/public1.png") 0px 0px repeat, -moz-linear-gradient(top, #f8f8f8,#eeeeee);
+    background: url("../image/public1.png") 0px 0px repeat, -webkit-gradient(linear,left top,left bottom,color-stop(.2, #f8f8f8),color-stop(1, #eeeeee)) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -o-linear-gradient(top, #f8f8f8,#eeeeee) !important;
+    background: url("../image/public1.png") 0px 0px repeat, -ms-linear-gradient(top, #f8f8f8,#eeeeee);
+}
+#header_left{
+    position: relative;
+    float: left;
+    border:hidden;
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 120px;
+    width: 400px;
+}
+#header_right{
+    position: relative;
+    float: right;
+    border:hidden;
+    margin-top: 30px;
+    height: 120px;
+    width: 330px;
+}
+#div_text1 a{
+    font:bold 44px Arial;
+    color: #51545C;
+    letter-spacing: -.03em;
+    text-decoration: none;
+}
+#div_text1 a:hover{
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+#div_text2 {
+    margin-top: 8px;
+}
+#div_text2 p{
+    font: normal 13px Arial;
+    color:#adb2b6;
+}
+/*上层按钮层属性设定***************************************************************************************************************************************************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;/*去掉所有li的点儿*/
+}
+#menu-top{
+    width: 1200px;
+    height:50px;
+    /*margin-top: 3px;*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#eeeeee');
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(255, 255, 255, 0.3) inset, 0 0 10px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    border-top:rgba(0,0,0,.15) 1px solid;
+    border-bottom:rgba(0,0,0,.15) 1px solid;
+    border-right: none;
+    border-left: none;
+}
+#nav1{
+    padding-left:0px;
+    /*border: 1px solid red;*/
+}
+#ul1 {
+    position: relative;
+    display: block;
+    width:1200px;
+    height: 50px;
+    margin-top: 0;
+    /*margin-left: 10px;*/
+    background: url("../image/public2.png") repeat;
+}
+#ul1 li {
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+#li-home{
+    background: url("../image/li_bg.png") 0px -10px  no-repeat;
+    background-color: rgb(252,252,252);
+    margin-left: 20px ;
+}
+#ul1 li a {
+    color: rgba(0,0,0,.55);
+    font:normal 13px Arial;
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height:50px;
+}
+#li-home:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    width: 5px;
+    height: 100%;
+}
+#ul1 a:hover span,#ul1 a:focus span{
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+#ul1 span {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.35s;
+    -moz-transition: -moz-transform 0.35s;
+    transition: transform 0.35s;
+}
+#li-span{
+    font-weight: bolder;
+    color: black;
+}
+#ul1 span::before {
+    position: absolute;
+    top: 100%;
+    height:100%;
+    width:110%;
+    content: attr(data-hover);
+    font-weight: bold;
+    color: black;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+/*最上方滚动隐藏的菜单栏属性设定**********************************************************************************************************/
+#top-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color:Rgb(239,239,239);
+    z-index: 100;
+    display: none;
+}
+#top-in{
+    width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#top-container a{/*logo位置*/
+    display: block;
+    float: right;
+    padding: 5px 0px;
+}
+#top-con-left a{/*按钮位置*/
+    display: block;
+    float: left;
+    padding: 15px 10px;
+    color: rgba(0,0,0,.7);
+    font:normal 13px Arial;
+    letter-spacing: -0.01em;
+    text-shadow: 0 4px 0 rgba(0,0,0,.1);
+}
+#top-container img{
+    height: 35px;
+    padding-top: 5px;
+}
+#li-home2{
+    background: url("../image/li_bg.png")0px -16px  no-repeat;
+    background-color: rgb(243,243,243);
+}
+#li-home2:before{
+    content: '';
+    background: url("../image/li_after.png")right bottom no-repeat;
+    position: absolute;
+    right: 0px;
+    /*top: -15px;*/
+    width: 5px;
+    height: 100%;
+}
+#ul2 li{
+    float: left;
+    line-height:50px ;
+    text-align: center;
+    position:relative;
+}
+/*滚动图界面属性设定**************************************************************************************************************************/
+#gundong{/*最外层div*/
+    position:absolute;
+    height: 450px;
+    width: 1200px;
+    border:none ;
+    overflow:hidden;/*隐藏超出div宽度的内容，这里是将其余四张图片隐藏*/
+    z-index:99;
+}
+#list{/*图片的div*/
+    position:absolute;
+    width:8400px;
+    z-index:1;
+}
+#list img{/*为滚动图片设置浮动及大小*/
+    float:left;
+    width:1200px;
+    height: 450px;
+}
+
+#buttons{/*三个按钮div*/
+    position:absolute;
+    height:10px;
+    width:60px;
+    z-index:99;
+    bottom:10px;
+    right:0;
+}
+#buttons span{/*三个按钮*/
+    cursor:pointer;
+    float:left;
+    border:1px solid #FFF;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    margin-right:5px;
+    background-color: RGBA(255,255,255,.1)
+}
+#buttons .on{/*保证代开网页时第一个按钮被点亮*/
+    background:blue;
+}
+.arrow{/*左右切换图片按钮属性*/
+    color:#FFF;
+    cursor:pointer;
+    display:none;
+    line-height:450px;
+    text-align:center;
+    width:35px;
+    height:35px;
+    top: 45%;
+    position:absolute;
+    z-index:2;
+    background-color:RGBA(0,0,0,.3);
+}
+.arrow:hover {
+    background-color:RGBA(0,0,0,.7);
+}
+#gundong:hover .arrow{
+    display:block;
+}
+#div1 a{/*按钮中的小箭头属性*/
+    text-decoration: none;
+    /*font:normal 20px Roboto;*/
+    font-size: 20px;
+    line-height: 35px;
+}
+#lbut_div{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 450px;
+    float: left;
+    z-index: 3;
+    background-image: -webkit-gradient(linear, 100% top, 0 top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(right, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+    background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+}
+#lbut_div:hover{
+    background-image: -webkit-gradient(linear, 100% top, 0 top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.6)));
+    background-image: -webkit-linear-gradient(right, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.6) 100%));
+    background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.6) 100%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.6) 100%);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+#rbut_div{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 450px;
+    float: right;
+    z-index: 3;
+    background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+}
+#rbut_div:hover{
+    background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.6)));
+    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.6) 100%));
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.6) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.6) 100%);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+#lbut{/*左箭头*/
+    left:20px;
+}
+#rbut{/*右箭头*/
+    right:20px;
+}
+/*滚动界面透明阴影层*/
+#yinying2{
+    position: relative;
+    height:20px;
+    left: 0;
+    right: 0;
+    top: 370px;
+    background-color: Rgba(0,0,0,.7);
+    z-index: 4;
+}
+#yinying1{
+    position: relative;
+    height:60px;
+    left: 0;
+    right: 0;
+    top: 370px;
+    background-color: Rgba(0,0,0,.4);
+    z-index:98;
+}
+/*透明阴影层中按钮属性*/
+#yinying1 li{
+    font:normal 12px Arial;
+    display: inline-block;
+    position: relative;
+    border: 2px solid rgba(225,225,225,.9);
+    border-radius: 3px;
+    width: 96px;
+    height: 33px;
+    left: 352px;
+    top: 13px;
+    text-align: center;
+    line-height: 33px;
+    background-color:  Rgba(0,0,0,.2);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+#yinying1 li:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.8);
+}
+#yinying1 li:hover a{
+    color:rgb(184,218,245);
+}
+#yinying1 li a{
+    display: inline-block;
+    width: 96px;
+    height: 33px;
+    left: 552px;
+    top: 13px;
+    text-decoration: none;
+    color: white;
+}
+#yinying1 a:hover{
+    text-decoration: none;
+}
+/*按钮的四射属性*/
+#yinying1 .line{
+    display: block;
+    position: absolute;
+    background: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+#yinying1:hover .line{
+    background:rgb(184,218,245);
+}
+#yinying1 .line-top{
+    height: 2px;
+    width: 0px;
+    left: -100%;
+    top: -2px;
+}
+#yinying1:hover .line-top{
+    width: 100%;
+    left: 0;
+}
+#yinying1 .line-bottom{
+    height: 2px;
+    width: 0px;
+    left: 200%;
+    top: 100%;
+}
+#yinying1:hover .line-bottom{
+    width: 100%;
+    left: 0;
+}
+#yinying1 .line-left{
+    height: 0;
+    width: 2px;
+    left: -2px;
+    top: 200%;
+}
+#yinying1:hover .line-left{
+    height: 100%;
+    top: 0;
+}
+#yinying1 .line-right{
+    height: 0;
+    width: 2px;
+    left: 100%;
+    top: -200%;
+}
+#yinying1:hover .line-right{
+    height: 100%;
+    top: 0;
+}
+/*下方内容区属性*****************************************************************************************************************/
+#bottom{
+    background-color: rgb(249,249,249);
+    position: relative;
+    height: 730px;
+    width: 1200px;
+    top: 450px;
+}
+/*研究项目内容区属性*/
+#bottom-object{
+    position: relative;
+    height: 260px;
+    width: 1150px;
+    left:25px;
+    z-index: 2;
+}
+.bottom-item{
+    display: inline;
+    float: left;
+    margin-left: 25px;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+}
+.image_bottom{
+    position: relative;
+    width: 350px;
+    height:100px;
+}
+/*内容区三张图片属性*/
+.image_bottom a img{
+    display: block;
+    position: relative;
+    width:65px;
+    height: 65px;
+    margin-left:140px;
+    margin-top: 40px;
+}
+.image-text-div{
+    width: 350px;
+    height:80px;
+    margin-top:-20px;
+}
+/*内容区三个按钮属性*/
+.bottom-li{
+    width: 350px;
+    height: 70px;
+}
+.bottom-li a{
+    text-decoration: none;
+}
+.bottom-li li{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    margin-left:125px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    background-color:  Rgba(0,0,0,.05);
+    border:none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.bottom-li li a{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    font:normal 15px Arial;
+    color: #888;
+}
+.bottom-li li:hover{
+    cursor: pointer;
+    background-color: Rgba(0,0,0,.1) ;
+}
+#line-div{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    margin-top: 0;
+    text-align: center;
+    border: hidden;
+}
+/*介绍内容*/
+#bottom-mes{
+    position: relative;
+    height:420px;
+    width: 1100px;
+    left:50px;
+    margin-top: 50px;
+}
+#bottom-mes h3{
+    font: bold 23px Arial;
+    color: rgba(0,0,0,.8);
+}
+#bottom-mes p{
+    font: normal 16px Arial!important;
+    text-align: justify;
+    margin: 0 0 10px;
+    padding: 0px;
+    border: 0px;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    line-height: 1em;
+    color: rgb(51,51,51);
+}
+#bottom-mes p a{
+    text-decoration: none;
+    color: rgb(125,164,181);
+}
+#bottom-mes p a:hover{
+    cursor: pointer;
+}
+/*最后一行标语****************************************************************************************************************************/
+#last-text-div{
+    background-color: rgb(249,249,249);
+    position: absolute;
+    width: 1200px;
+    height:30px ;
+    top: 1380px;
+}
+#last-text-div p{
+    color:rgb(124,124,125);
+    text-align:center;
+    font:normal 13px Arial!important;
+    padding-top: 15px;
+}
+#last-text-div p a{
+    text-decoration: none;
+    color: rgb(2,160,232);
+}
+/*右下角跳转按钮**************************************************************************************************************************/
+#scroll-top-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 65px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-top-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-top{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}
+#scroll-bottom-div{
+    background-color:  Rgba(0,0,0,.5);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(90deg);
+    z-index: 4;
+    display: none;
+}
+#scroll-bottom-div:hover{
+    cursor: pointer;
+    background-color:  Rgba(0,0,0,.7);
+}
+#scroll-bottom{
+    display: block;
+    position: relative;
+    color: white;
+    top: 25%;
+}

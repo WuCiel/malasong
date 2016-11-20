@@ -1,0 +1,42 @@
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0; font-size:12px;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+
+
+#page,#page.mall-chn,#content,#container,.logoBar,.hideText,.logoBar-slide,.logoBar-trigger .logoBar .arrow,.sellout .img .saled,.col-list li,.logoList li,.shop-name a,.imglist li,.sale-slide,.imglist,.logoTitle .title,.imglist .bottomBlock .price,.col-lists-content{overflow:hidden;}#page,#page.mall-chn{background:#fff;}
+#content{width:990px; margin:0px auto;}
+#container{width:990px;margin:0 auto;}
+a:hover{text-decoration:none;}
+.special-offer-top{margin-top:10px;}
+.hover .arrow{-moz-transform:rotate(180deg);-moz-transform-origin:50% 30%;-webkit-transform:rotate(180deg);-webkit-transform-origin:50% 30%;-o-transform:rotate(180deg);-o-transform-origin:50% 30%;transform:rotate(180deg);transform-origin:50% 30%;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
+.arrow:hover{cursor:pointer;}
+.logoList{float:right;margin:10px 20px 0 0;overflow:hidden;_width:800px;}.logoList li{float:right;margin-right:10px;display:inline;height:30px;}
+.imglist li{float:left;}
+.imglist li{display:block;position:relative;border:1px solid #e6e6e6;border-right:0;padding:7px;padding-bottom:0;width:95px;background:#fff;}
+.imglist .last{border-right:1px solid #e6e6e6;}li span{text-align:center;}
+.imglist li a:hover{text-decoration:none;color:#999;}
+.logo:hover{cursor:pointer;}
+.imglist .img{height:280px;position:relative;display:block;overflow:hidden;}
+.imglist .img img{height:275px;vertical-align:top;}
+.logoTitle .title,.logoTitle .logo{display:block;}
+.logoTitle .title{padding-top:5px;color:#999;}
+.imglist .logoTitle{width:325px;float:left;}.imglist .zoom,.selected .thumb{display:none;opacity:.0;filter:alpha(opacity=0);}.selected .zoom{display:block;width:424px;}.show .zoom{opacity:1;filter:alpha(opacity=100);}
+.ls-logoList img,.logoList img,.imglist .logo,.logoTitle .logo img{max-width:60px;max-height:30px;_width:expression((this.offsetWidth>60) ? "60px":this.offsetWidth+"px");_height:expression((this.offsetWidth>30) ? "30px":this.offsetHeight+"px");}
+.imglist .logoTitle,.imglist .price{padding:5px 0 15px;}
+.bottomBlock .price{display:block;}
+.imglist .bottomBlock .price{text-align:right;width:95px;overflow:hidden;}.imglist .bottomBlock{position:relative;left:-330px;width:424px;height:90px;overflow:hidden;}
+.imglist .selected .bottomBlock{left:0;}
+.imglist .img .saled{background:#d33131;opacity:.8;filter:alpha(opacity=80);display:block;height:24px;color:#fff;position:absolute;width:100%;z-index:1000;line-height:24px;bottom:4px;}
+.sellout .img .saled{position:absolute;top:15px;left:15px;color:#838282;background:none;height:20px;width:65px;bottom:0;}
+.col-list .sell-out,.imglist .sell-out{width:100%;background:#838282;opacity:.8;filter:alpha(opacity=80);display:block;height:45px;vertical-align:middle;color:#fff;position:absolute;font:normal bold 32px/45px arial,sans-serif;z-index:1000;bottom:0;}
+.price .discountPrice{color:#cb0000;font:normal bold 40px/40px arial,sans-serif;background:url();height:40px;padding-left:0;text-align:right;overflow:hidden;}
+.imglist .price .discountPrice{width:95px;}
+.price .discountPrice s,.price .marketPrice{display:inline-block;background:url(T1Pt49XoBzXXXXXXXX-15-28.png) no-repeat;}
+.price .marketPrice{color:#b5b5b5;padding-left:8px;font:normal bold 12px/12px arial,sans-serif;background-position:0 1px;height:10px;line-height:10px;height:9px\0;position:relative;right:2px;}.price .discountPrice,.price .marketPrice{display:inline-block;}
+.price .discountPrice s{width:15px;height:20px;background-position:0 -9px;top:5px;position:relative;vertical-align:top;}
+.imglist .selected{width:424px;}
+/**Ò»Á÷ËØ²ÄÍøwww.16sucai.com**/
